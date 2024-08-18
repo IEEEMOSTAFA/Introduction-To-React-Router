@@ -11,9 +11,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./Home/Home.jsx";
-import Header from "./Header/Header.jsx";
+// import Header from "./Header/Header.jsx";
 import About from "./comonents/About/About.jsx";
 import Contact from "./comonents/Contact/Contact.jsx";
+import Users from "./comonents/Users/Users.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,12 +24,17 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About></About>
+
       },
       {
-        path:'/contact',
+        path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/users',
+        loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
+        element: <Users></Users>
       }
-
     ]
   },
   // {
