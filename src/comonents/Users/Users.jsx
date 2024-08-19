@@ -4,7 +4,10 @@ import User from "../User/User";
 import './Users.css';
 
 const Users = () => {
-
+    // state----> data
+    // state ---> loader
+    // use effect
+    // fetch  ---> set state 
 
     const users = useLoaderData();
     // state ----> data
