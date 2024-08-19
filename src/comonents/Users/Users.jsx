@@ -1,7 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import User from "../User/User";
 // import './Users.css'
+// import './Users.css';
 import './Users.css';
+
 
 const Users = () => {
     // state----> data

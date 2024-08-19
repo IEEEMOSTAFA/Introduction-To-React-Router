@@ -1,6 +1,7 @@
-.users{
+
+.Users {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-bottom: auto;
+    gap: 1rem; /* Space between the boxes */
+    margin-bottom: 10px; /* Space below the grid */
 }
